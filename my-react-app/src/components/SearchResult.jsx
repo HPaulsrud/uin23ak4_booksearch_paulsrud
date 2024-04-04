@@ -19,10 +19,7 @@ const SearchResult = ({ results }) => {
                 {result.isbn && result.isbn.length > 0 && (
                   <a
                     href={`https://www.amazon.com/s?k=${result.isbn[0]}`}
-                    onClick={(event) => handleAmazonSearch(event, result.isbn[0])}
-                  >
-                    Søk på Amazon
-                  </a>
+                    onClick={(event) => handleAmazonSearch(event, result.isbn[0])}>Søk på Amazon</a>
                 )}
               </div>
             </div>

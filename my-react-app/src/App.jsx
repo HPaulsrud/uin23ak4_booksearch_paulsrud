@@ -4,7 +4,7 @@ import React from 'react';
 import { useState } from 'react';
 import Layout from './components/Layout';
 import Book from './components/Bok';
-import BookList from './components/Bokliste';
+import BookList from './components/bookcard';
 import SearchBar from './components/Search';
 import SearchResult from './components/SearchResult';
 
@@ -13,6 +13,7 @@ const App = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  //Fått hjelp av chatgpt her, spurte om hjelp til å få i gang søkefunksjonen i react prosjekt
   const handleSearch = async (searchTerm) => {
     try {
       setLoading(true);

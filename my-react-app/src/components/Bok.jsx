@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/style.css';
 
 
-const Book = ({ title, author, year, rating, coverId, amazonLink }) => {
+const Book = ({ title, author, year, rating, coverId}) => {
   return (
     <div className="book">
       {coverId && (

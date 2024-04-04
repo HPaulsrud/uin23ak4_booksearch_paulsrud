@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Book from './Bok';
-
+//Har laget bookcard og searchresult som to forskjellige, en som henter james bond, og en som henter søkeresultater
 const BookList = () => {
   const [books, setBooks] = useState([]);
 
